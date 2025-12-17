@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
  labels:
    app: events-web
- name: events-web
+ name: events-web-v2
 spec:
- replicas: 2
+ replicas: 1
  selector:
    matchLabels:
      app: events-web
-     ver: v1.0
+     ver: v2.0
  template:
    metadata:
      labels:
        app: events-web
-       ver: v1.0
+       ver: v2.0
    spec:
      containers:
      - image: vinodh6991/events-website:v1.0
