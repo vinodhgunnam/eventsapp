@@ -17,8 +17,12 @@ spec:
        ver: v1.0
    spec:
      containers:
-     - image: vinodh6991/events-web:v1.0
+     - image: vinodh6991/events-website:v1.0
        name: events-web
        ports:
        - containerPort: 8080
+       env:
+       - name: SERVER
+         value: "http://events-api-svc:8082"
+  
 
