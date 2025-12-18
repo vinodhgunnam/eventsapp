@@ -1,4 +1,4 @@
-kind: Service
+helm upgrade tomcat-server oci://registry-1.docker.io/bitnamicharts/tomcatkind: Service
 apiVersion: v1
 metadata:
   name: statefulset-demo-service
